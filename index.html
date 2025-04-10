@@ -18,12 +18,469 @@
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="src/styles.css">
+    <!-- Lucide icon library -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <header id="header" class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+      <div class="container">
+        <div class="header-content">
+          <a href="#home" class="logo">Aswin S</a>
+
+          <!-- Desktop Navigation -->
+          <nav class="desktop-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobile-nav" class="mobile-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text animate-fade-in">
+              <h1>Hello, I'm <span class="primary-color">Aswin S</span></h1>
+              <h2>Aspiring Specialist Programmer</h2>
+              <p>
+                Aspiring Specialist Programmer with a strong foundation in computer science 
+                and hands-on experience in software development. Proficient in Python 
+                and SQL, and committed to continuous learning and delivering high-quality solutions.
+              </p>
+              <div class="button-group">
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+                <a href="#projects" class="btn btn-outline">View Projects</a>
+              </div>
+            </div>
+            <div class="hero-contact animate-fade-in" style="animation-delay: 0.2s">
+              <div class="contact-card">
+                <h3>Contact Details</h3>
+                <div class="contact-info">
+                  <div class="contact-item">
+                    <i data-lucide="mail"></i>
+                    <a href="mailto:sundarajuaswintdr@gmail.com">sundarajuaswintdr@gmail.com</a>
+                  </div>
+                  <div class="contact-item">
+                    <i data-lucide="phone"></i>
+                    <a href="tel:+918940409409">+91 8940409409</a>
+                  </div>
+                  <div class="contact-item">
+                    <i data-lucide="map-pin"></i>
+                    <span>Kumbakonam, Tanjore (Dt), Tamil Nadu</span>
+                  </div>
+                  <div class="contact-item">
+                    <i data-lucide="github"></i>
+                    <a href="https://github.com/Aswin04s" target="_blank" rel="noopener noreferrer">github.com/Aswin04s</a>
+                  </div>
+                  <div class="contact-item">
+                    <i data-lucide="linkedin"></i>
+                    <a href="https://linkedin.com/in/aswin-sundararaju-79403a259" target="_blank" rel="noopener noreferrer">linkedin.com/in/aswin-sundararaju-79403a259</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2 class="section-heading">About Me</h2>
+          <div class="about-content">
+            <div class="about-text animate-fade-in">
+              <p>
+                I am an aspiring Specialist Programmer with a passion for technology and 
+                innovation. Currently pursuing my B.Tech in Artificial Intelligence and 
+                Data Science, I've developed a strong foundation in programming, data analysis, 
+                and software development.
+              </p>
+              <p>
+                My academic journey has equipped me with the technical skills needed in the industry,
+                while my internship experience has provided practical exposure to real-world data
+                analysis challenges. I am particularly interested in building software solutions that
+                harness the power of data to drive insights and innovation.
+              </p>
+              <p>
+                I am constantly seeking to expand my knowledge and skills through courses,
+                projects, and hands-on experience. My goal is to contribute to the tech
+                industry by developing innovative solutions that address complex challenges.
+              </p>
+            </div>
+            <div class="skills-cards">
+              <div class="skill-card animate-fade-in" style="animation-delay: 0.1s">
+                <i data-lucide="user-round"></i>
+                <h3>Software Development</h3>
+                <p>Building efficient and scalable applications</p>
+              </div>
+              <div class="skill-card animate-fade-in" style="animation-delay: 0.2s">
+                <i data-lucide="database"></i>
+                <h3>Data Analysis</h3>
+                <p>Extracting insights from complex datasets</p>
+              </div>
+              <div class="skill-card animate-fade-in" style="animation-delay: 0.3s">
+                <i data-lucide="bar-chart"></i>
+                <h3>Data Visualization</h3>
+                <p>Creating insightful dashboards and reports</p>
+              </div>
+              <div class="skill-card animate-fade-in" style="animation-delay: 0.4s">
+                <i data-lucide="code"></i>
+                <h3>Web Development</h3>
+                <p>Developing web applications with Django</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="experience-section">
+        <div class="container">
+          <h2 class="section-heading">Experience</h2>
+          <div class="experience-content">
+            <div class="experience-card animate-fade-in">
+              <div class="experience-header">
+                <h3>Data Analyst Intern | TANSAM</h3>
+                <div class="experience-meta">
+                  <span><i data-lucide="calendar-days"></i>March 2024 – April 2024</span>
+                  <span><i data-lucide="map-pin"></i>Chennai, Tamil Nadu</span>
+                </div>
+              </div>
+              <div class="experience-details">
+                <ul>
+                  <li>Analyzed Twitter data using Python, Power BI, and SQL to identify trends.</li>
+                  <li>Created interactive dashboards and reports.</li>
+                  <li>Collaborated with cross-functional teams for data-driven decisions.</li>
+                  <li>Participated in team meetings to ensure project accuracy.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <div class="container">
+          <h2 class="section-heading">Skills</h2>
+          <div class="skills-content">
+            <div class="technical-skills animate-fade-in">
+              <h3>Technical Skills</h3>
+              <div class="skill-bars">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">SQL</span>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Power BI</span>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Excel</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Django</span>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="soft-skills animate-fade-in" style="animation-delay: 0.2s">
+              <h3>Soft Skills</h3>
+              <div class="skill-bars">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Communication & Collaboration</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Adaptability</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Continuous Learning</span>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 95%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Problem Solving</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="education-section">
+        <div class="container">
+          <h2 class="section-heading">Education</h2>
+          <div class="education-content">
+            <div class="education-card animate-fade-in">
+              <div class="education-icon">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <div class="education-details">
+                <h3>Panimalar Institute of Technology, Chennai</h3>
+                <p class="education-period">B.Tech in Artificial Intelligence and Data Science (2021 – 2025)</p>
+                <p class="education-gpa">GPA: 8.27/10 (till 6th semester)</p>
+                <div class="education-highlights">
+                  <div class="highlight-item">
+                    <i data-lucide="file-text"></i>
+                    <div class="highlight-content">
+                      <h4>Thesis</h4>
+                      <p>Decentralizing AI Computing: A Study with IPFS and Public Peer-to-Peer</p>
+                    </div>
+                  </div>
+                  <div class="highlight-item">
+                    <i data-lucide="book-open"></i>
+                    <div class="highlight-content">
+                      <h4>Notable Course</h4>
+                      <p>Generative AI for Everyone (Coursera)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="education-card animate-fade-in" style="animation-delay: 0.2s">
+              <div class="education-icon">
+                <i data-lucide="award"></i>
+              </div>
+              <div class="education-details">
+                <h3>Christ The King Matric Hr. Sec. School, Kumbakonam</h3>
+                <p class="education-period">Higher Secondary Education</p>
+                <p>HSE (2021): 89.2%</p>
+                <p>SSLC (2019): 89.6%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <h2 class="section-heading">Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card animate-fade-in" style="animation-delay: 0s">
+              <div class="project-header">
+                <i data-lucide="twitter"></i>
+                <h3>Twitter Data Analysis</h3>
+              </div>
+              <p>Analyzed Twitter data to identify trends and patterns using advanced data analysis techniques.</p>
+              <div class="project-badges">
+                <span class="badge">Python</span>
+                <span class="badge">SQL</span>
+                <span class="badge">Data Analysis</span>
+              </div>
+            </div>
+            
+            <div class="project-card animate-fade-in" style="animation-delay: 0.1s">
+              <div class="project-header">
+                <i data-lucide="activity"></i>
+                <h3>Hospitality Domain Data Analysis</h3>
+              </div>
+              <p>Performed comprehensive data analysis for the hospitality sector to drive business insights.</p>
+              <div class="project-badges">
+                <span class="badge">Power BI</span>
+                <span class="badge">Python</span>
+                <span class="badge">Excel</span>
+              </div>
+            </div>
+            
+            <div class="project-card animate-fade-in" style="animation-delay: 0.2s">
+              <div class="project-header">
+                <i data-lucide="stethoscope"></i>
+                <h3>Medical Data Extraction</h3>
+              </div>
+              <p>Developed a system to extract and process medical data from various sources.</p>
+              <div class="project-badges">
+                <span class="badge">Python</span>
+                <span class="badge">Data Processing</span>
+              </div>
+            </div>
+            
+            <div class="project-card animate-fade-in" style="animation-delay: 0.3s">
+              <div class="project-header">
+                <i data-lucide="file-spreadsheet"></i>
+                <h3>Python Automation for Spreadsheet Processing</h3>
+              </div>
+              <p>Created automated solutions for processing and analyzing spreadsheet data.</p>
+              <div class="project-badges">
+                <span class="badge">Python</span>
+                <span class="badge">Excel</span>
+                <span class="badge">Automation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section id="certifications" class="certifications-section">
+        <div class="container">
+          <h2 class="section-heading">Certifications</h2>
+          <div class="certifications-grid">
+            <div class="certification-card animate-fade-in" style="animation-delay: 0s">
+              <i data-lucide="medal"></i>
+              <h3>Data Analytics using Power BI and Python</h3>
+              <p>TANSAM</p>
+            </div>
+            
+            <div class="certification-card animate-fade-in" style="animation-delay: 0.1s">
+              <i data-lucide="medal"></i>
+              <h3>Python Course</h3>
+              <p>Dhaval Patel</p>
+            </div>
+            
+            <div class="certification-card animate-fade-in" style="animation-delay: 0.2s">
+              <i data-lucide="medal"></i>
+              <h3>Generative AI for Everyone</h3>
+              <p>Coursera</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info animate-fade-in">
+            <h3>Aswin S</h3>
+            <p>Aspiring Specialist Programmer with a passion for technology and innovation.</p>
+            <p class="footer-quote">"Driven by data. Powered by code."</p>
+          </div>
+
+          <div class="footer-contact animate-fade-in" style="animation-delay: 0.1s">
+            <h3>Contact</h3>
+            <div class="footer-contact-info">
+              <div class="footer-contact-item">
+                <i data-lucide="mail"></i>
+                <a href="mailto:sundarajuaswintdr@gmail.com">sundarajuaswintdr@gmail.com</a>
+              </div>
+              <div class="footer-contact-item">
+                <i data-lucide="phone"></i>
+                <a href="tel:+918940409409">+91 8940409409</a>
+              </div>
+              <div class="footer-contact-item">
+                <i data-lucide="map-pin"></i>
+                <span>Kumbakonam, Tanjore (Dt), Tamil Nadu</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-links animate-fade-in" style="animation-delay: 0.2s">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social animate-fade-in" style="animation-delay: 0.3s">
+            <h3>Connect</h3>
+            <div class="social-icons">
+              <a href="https://github.com/Aswin04s" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://linkedin.com/in/aswin-sundararaju-79403a259" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="mailto:sundarajuaswintdr@gmail.com">
+                <i data-lucide="mail"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Aswin S. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/main.js"></script>
   </body>
 </html>
